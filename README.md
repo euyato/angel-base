@@ -21,22 +21,26 @@ termux-setup-storage
 ```
 Confirme a permissão.
 
+## Instalação das dependencias
 **2° Comando**
 ```
 pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install wget -y && pkg install git -y
 ```
 Necessário digitar y quando necessario.
 
+## Clonando repositorio
 **3° Comando**
 ```
 cd /sdcard && git clone https://github.com/euyato/angel-base.git
 ```
+
+## Acessando e iniciando a base
 **4° Comando**
 ```
 cd angel-base && npm start
 ```
 
-## 🖲️ START DO BOT 🖲
+## 🖲️ STARTS DA BASE 🖲
 ```
 npm start
 ```
