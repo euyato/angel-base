@@ -14,7 +14,7 @@
 <img title="Versão" src="https://img.shields.io/badge/Versão-2.5-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 
-Instalação via termux
+## Instalação via termux
 **1° Comando**
 ```
 termux-setup-storage
@@ -36,7 +36,7 @@ cd /sdcard && git clone https://github.com/euyato/angel-base.git
 cd angel-base && npm start
 ```
 
-🖲️ START DO BOT 🖲
+## 🖲️ START DO BOT 🖲
 ```
 npm start
 ```
