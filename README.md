@@ -33,6 +33,7 @@ Necessário digitar y quando necessario.
 ```
 cd /sdcard && git clone https://github.com/euyato/angel-base.git
 ```
+Espere carregar tudo
 
 ## Acessando e iniciando a base
 **4° Comando**
