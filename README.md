@@ -1,8 +1,8 @@
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=🜛+𝐍𝐄𝐌+𝐆𝐑𝐄𝐘+𝐕𝟐-7+🜛;۞+𝐎𝐅𝐂+𝐔𝐏𝐃𝐀𝐓𝐄+۞">      
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=🜛+𝐁𝐀𝐒𝐄+𝐀𝐍𝐆𝐄𝐋+𝐕𝟐-5+🜛;۞+𝐎𝐅𝐂+𝐔𝐏𝐃𝐀𝐓𝐄+۞">      
 
 <h1 align="center">
 <p>
-<img src= "https://i.ibb.co/ZR8nVfvg/Screenshot-20250217-143404-Chrome.jpg" alt="GREY MD" width="720">
+<img src= "https://i.ibb.co/99jD46xb/IMG-20250310-WA0065.jpg" alt="ANGEL BASE" width="720">
 </p>
 
 <p align="center">
@@ -11,40 +11,37 @@
 
 <p align="center">
 <img title="Autor" src="https://img.shields.io/badge/Autor-@euyato-orange.svg?style=for-the-badge&logo=github"></a>
-<img title="Versão" src="https://img.shields.io/badge/Versão-2.7-orange.svg?style=for-the-badge&logo=github"></a>
+<img title="Versão" src="https://img.shields.io/badge/Versão-2.5-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 
-## Instalação Via Termux  <img src="https://user-images.githubusercontent.com/108157095/182052725-6568419a-6a9f-490a-85ea-90b94af694fe.png" height="25px">
+## Instalação Via Termux
 **1° Comando**
-```
-pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install wget -y && pkg install git -y
-```
-Será necessário digitar y toda vez que pedir.
----------------------------
-
-**2° Comando**
 ```
 termux-setup-storage
 ```
+Confirme a permissão.
+
+**2° Comando**
+```
+pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install wget -y && pkg install git -y
+```
+Necessário digitar y quando necessario.
+
 **3° Comando**
 ```
-cd /sdcard && git clone https://github.com/euyato/grey-bot
+cd /sdcard && git clone https://github.com/euyato/angel-base.git
 ```
 **4° Comando**
 ```
-cd grey-bot && sh start.sh
+cd angel-base && npm start
 ```
 
-## 🖲️ START DO BOT 🖲️ <img src="https://user-images.githubusercontent.com/108157095/182053901-78e4a217-51ba-42a3-8ec5-38ed978ad752.png" height="25px">
+## 🖲️ START DO BOT 🖲
 ```
 npm start
 ```
 ```
 sh start.sh
 ```
-## Gerar Um Novo QR  <img src="https://user-images.githubusercontent.com/108157095/182053978-d1a08952-4625-4e3f-b469-c8ebe4f22ac8.png" height="25px">
-```
-npm start
-```
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=֎+𝐍𝐄𝐌+𝐆𝐑𝐄𝐘+֎"> 
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=֎+𝐍𝐄𝐌+𝐁𝐀𝐒𝐄+𝐀𝐍𝐆𝐄𝐋+֎"> 
