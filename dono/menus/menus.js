@@ -236,7 +236,7 @@ return `╭┄─▸
 │ Use assim: ${prefix}comando
 ╰───▸
 ╭┄─▸
-│✰ ADICIONE SEUS COMANDOS PREMIUM / VEJA O infopremium
+│✰ ADICIONE SEUS COMANDOS PREMIUM
 ╰───▸`;
 };
 
