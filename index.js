@@ -2594,6 +2594,78 @@ renderLargerThumbnail: true
 }, {quoted: selo})
 break 
 
+case 'menulogos':
+await escrever()
+await sleep(1000)
+conn.sendMessage(from, {text: menulogos(prefix, NomeDoBot, sender), contextInfo: {
+mentionedJid: [sender],
+externalAdReply: {
+showAdAttribution: false,
+title: `ENTRE NO GRUPO OFC`,
+body: `Yato modas Domina`,
+thumbnailUrl: logoslink.logo,
+sourceUrl: Grupofc,
+mediaType: 1,
+renderLargerThumbnail: true
+}
+}
+}, {quoted: selo})
+break
+
+case 'alteradores':
+await escrever()
+await sleep(1000)
+conn.sendMessage(from, {text: alteradores(prefix, NomeDoBot, sender), contextInfo: {
+mentionedJid: [sender],
+externalAdReply: {
+showAdAttribution: false,
+title: `ENTRE NO GRUPO OFC`,
+body: `Yato modas Domina`,
+thumbnailUrl: logoslink.logo,
+sourceUrl: Grupofc,
+mediaType: 1,
+renderLargerThumbnail: true
+}
+}
+}, {quoted: selo})
+break
+
+case 'menupremium':
+await escrever()
+await sleep(1000)
+conn.sendMessage(from, {text: menuprem(prefix, NomeDoBot, sender), contextInfo: {
+mentionedJid: [sender],
+externalAdReply: {
+showAdAttribution: false,
+title: `ENTRE NO GRUPO OFC`,
+body: `Yato modas Domina`,
+thumbnailUrl: logoslink.logo,
+sourceUrl: Grupofc,
+mediaType: 1,
+renderLargerThumbnail: true
+}
+}
+}, {quoted: selo})
+break
+
+case 'efeitos':
+await escrever()
+await sleep(1000)
+conn.sendMessage(from, {text: efeitos(prefix, NomeDoBot, sender), contextInfo: {
+mentionedJid: [sender],
+externalAdReply: {
+showAdAttribution: false,
+title: `ENTRE NO GRUPO OFC`,
+body: `Yato modas Domina`,
+thumbnailUrl: logoslink.logo,
+sourceUrl: Grupofc,
+mediaType: 1,
+renderLargerThumbnail: true
+}
+}
+}, {quoted: selo})
+break 
+
 case 'ativarcmds':
 case 'ativacoes':  
 if(!isGroup) return reply(Res_SoGrupo)
