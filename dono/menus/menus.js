@@ -20,43 +20,51 @@ return `╭┄─▸
 ╭┄─▸
 │ PESQUISAS/BAIXAR
 ├─ ❑
-│✰ play (NOME) 
-│✰ playvid (NOME)
-│✰ tiktok (LINK) 
-│✰ instagram (LINK) 
+│✰ play (Nome) 
+│✰ playvid (Nome)
+│✰ tiktok (Link) 
+│✰ tiktokaudio (Link) 
+│✰ instagram (Link) 
+│✰ insta_audio (Link) 
 ╰───▸
 ╭┄─▸
 │ INFORMAÇÕES 
 ├─ ❑
-│✰ ping (VELO)
+│✰ ping (Velocidade)
 │✰ atividade (informaçoes)
 │✰ rankativo (informaçoes)
-│✰ checkativo (@MARCAR)
-│✰ ranklevel (DE-TODOS) 
-╰───▸
-╭┄─▸
-│ GAMES
-├─ ❑
-│✰ iniciar_forca
-│✰ ppt (PEDRA/PAPEL/TESOURA) 
-│✰ jogodavelha (@MARCAR) 
-│✰ cassino (game)
+│✰ checkativo (@Marcar)
+│✰ ranklevel (Todos) 
 ╰───▸
 ╭┄─▸
 │ FIGURINHAS
 ├─ ❑
-│✰ attp (TEXTO)
-│✰ fsticker (MARCAR-FOTO)
-│✰ sticker (MARCAR-FOTO)
+│✰ attp (Texto)
+│✰ fsticker (Marcar-Foto)
+│✰ sticker (Marcar-Foto)
+│✰ figu-random (figurinhas)
+│✰ figu-raiva (figurinhas)
+│✰ figu-meme (figurinhas)
+│✰ figu-desenho (figurinhas)
+│✰ figu-flork (figurinhas)
+│✰ figu-roblox (figurinhas)
+│✰ figu-anime (figurinhas)
+│✰ figu-coreana (figurinhas)
+│✰ figu-animais (figurinhas)
+│✰ figu-bebe (figurinhas)
 ╰───▸
 ╭┄─▸
-│ COMANDOS/BÁSICOS
+│ COMANDOS BÁSICOS
 ├─ ❑
 │✰ perfil (informaçoes)
 │✰ calcular 1 + 1
 │✰ fazernick (NICK)
 │✰ signo ( EX: virgem)
 │✰ metadinha (imagens)
+│✰ iniciar_forca
+│✰ ppt (Pedra/Papel/Tesoura) 
+│✰ jogodavelha (@Marcar) 
+│✰ cassino (game)
 ╰───▸`;
 };
 
