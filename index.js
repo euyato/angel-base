@@ -192,7 +192,6 @@ const { mensagens } = require('./arquivos/armor/js/aleatoria.js');
 const { sortear } = require('./arquivos/armor/js/aleatoria.js');
 
 var enviarmen = mensagens[Math.floor(Math.random() * mensagens.length)];
-//========================================\\
 
 //================= Funções de Grupo 🥋 =============//
 
@@ -550,19 +549,19 @@ setTimeout(async() => {
 if(budy.includes(`${prefix}sticker`) || budy.includes(`${prefix}s`) || budy.includes(`${prefix}stk`) || budy.includes(`${prefix}st`) || budy.includes(`${prefix}fsticker`) || budy.includes(`${prefix}f`) || budy.includes(`${prefix}fstiker`)) return
 
 if(type == 'imageMessage') {
-var pack =`⚝ ⇝ Grupo:\n${groupName}`
-var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`
+var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+/*var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`*/
 owgi = await getFileBuffer(info.message.imageMessage, 'image')
-let encmediaa = await sendImageAsSticker2(conn, from, owgi, info, { packname:pack, author:author2})
+let encmediaa = await sendImageAsSticker2(conn, from, owgi, info, { packname:pack})
 DLT_FL(encmediaa)
 }
 
 if(type == 'videoMessage') {
 if((isMedia && info.message.videoMessage.seconds < 10)){
-var pack =`⚝ ⇝ Grupo:\n${groupName}`
-var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n⚒${NickDono}`
+var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+/*var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n⚒${NickDono}`*/
 owgi = await getFileBuffer(info.message.videoMessage, 'video')
-let encmedia = await sendVideoAsSticker2(conn, from, owgi, info, { packname:pack, author:author2})
+let encmedia = await sendVideoAsSticker2(conn, from, owgi, info, { packname:pack})
 DLT_FL(encmedia)
 }
 } 
@@ -5509,17 +5508,17 @@ var RSM = info.message?.extendedTextMessage?.contextInfo?.quotedMessage
 var boij = RSM?.imageMessage || info.message?.imageMessage || RSM?.viewOnceMessageV2?.message?.imageMessage || info.message?.viewOnceMessageV2?.message?.imageMessage || info.message?.viewOnceMessage?.message?.imageMessage || RSM?.viewOnceMessage?.message?.imageMessage
 var boij2 = RSM?.videoMessage || info.message?.videoMessage || RSM?.viewOnceMessageV2?.message?.videoMessage || info.message?.viewOnceMessageV2?.message?.videoMessage || info.message?.viewOnceMessage?.message?.videoMessage || RSM?.viewOnceMessage?.message?.videoMessage  
 if(boij) {
- var pack = `⚝ ⇝ Solicitado por:\n⚝ ⇝ Bot:\n⚝ ⇝ Dono:`
- var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`
+ var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+/* var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`*/
 owgi = await getFileBuffer(boij, 'image')
-let encmediaa = await sendImageAsSticker(conn, from, owgi, info, { packname:pack, author:author2})
+let encmediaa = await sendImageAsSticker(conn, from, owgi, info, { packname:pack})
 await DLT_FL(encmediaa)
 } else if(boij2 && boij2?.seconds < 11) {
- var pack = `⚝ ⇝ Solicitado por:\n⚝ ⇝ Bot:\n⚝ ⇝ Dono:`
- var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`
+ var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+ /*var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`*/
 reply(Res_Aguarde)
 owgi = await getFileBuffer(boij2, 'video')
-let encmedia = await sendVideoAsSticker(conn, from, owgi, info, { packname:pack, author:author2})
+let encmedia = await sendVideoAsSticker(conn, from, owgi, info, { packname:pack})
 await DLT_FL(encmedia)
 } else {
 reply(`Enviar imagem / vídeo / gif com legenda \n${prefix}sticker (duração do adesivo de vídeo de 1 a 10 segundos)`)
@@ -5535,16 +5534,16 @@ var RSM = info.message?.extendedTextMessage?.contextInfo?.quotedMessage
 var boij2 = RSM?.imageMessage || info.message?.imageMessage || RSM?.viewOnceMessageV2?.message?.imageMessage || info.message?.viewOnceMessageV2?.message?.imageMessage || info.message?.viewOnceMessage?.message?.imageMessage || RSM?.viewOnceMessage?.message?.imageMessage
 var boij = RSM?.videoMessage || info.message?.videoMessage || RSM?.viewOnceMessageV2?.message?.videoMessage || info.message?.viewOnceMessageV2?.message?.videoMessage || info.message?.viewOnceMessage?.message?.videoMessage || RSM?.viewOnceMessage?.message?.videoMessage
 if(boij2){
-var pack = `⚝ ⇝ Solicitado por:\n⚝ ⇝ Bot:\n⚝ ⇝ Dono:`
-var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`
+var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+/*var author2 = `⚝ ${pushname}\n⚝ ${NomeDoBot}`*/
 owgi = await getFileBuffer(boij2, 'image')
-let encmediaa = await sendImageAsSticker2(conn, from, owgi, info, { packname:pack, author:author2})
+let encmediaa = await sendImageAsSticker2(conn, from, owgi, info, { packname:pack})
 await DLT_FL(encmediaa)
 } else if(boij && boij.seconds < 11){
-var pack = `⚝ ⇝ Solicitado por:\n⚝ ⇝ Bot:\n⚝ ⇝ Dono:`
-var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`
+var pack = `↧ [👑] » Criador (a) da Figurinha:\n• ↳ ${pushname} owner\n—\n↧ [🩵] » Visite nosso Instagram:\n• ↳ instagram.com/euyato`
+/*var author2 = `⚒${pushname}\n⚒${NomeDoBot}\n${NickDono}`*/
 owgi = await getFileBuffer(boij, 'video')
-let encmedia = await sendVideoAsSticker2(conn, from, owgi, info, { packname:pack, author:author2})
+let encmedia = await sendVideoAsSticker2(conn, from, owgi, info, { packname:pack})
 await DLT_FL(encmedia)
 } else {
 return reply('Marque uma imagem, ou um vídeo de ate 9.9 segundos, ou uma visualização única, com o comando ${prefix+command}')
