@@ -42,6 +42,7 @@ var numerodono_ofc = setting.numerodono.replace(new RegExp("[()+-/ +/]", "gi"), 
 const SNET = "@s.whatsapp.net";
 
 const API_KEY_ANGEL = "DARKBLACK2347";
+const NATSU_KEY = "natsu01";
 
 function VR_EMJ_LMD(text) {
 const regex =/[\u0300-\u036F\u0483-\u0489\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/g;
@@ -4304,12 +4305,38 @@ reagir(from, "❌️")
 }
 break;
 
+case 'ttkaudio':
+case 'tiktokaudio':
+try {
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+if(!q.includes("tiktok")) return reply(`${prefix+command} link do Tiktok`);
+let api = await fetchJson(`https://www.astroapi.shop/download/tiktok?url=${q}&apikey=${NATSU_KEY}`)
+conn.sendMessage(from, {audio: {url: `${api.resultado.audio}`}, quoted: selo})
+} catch (e) {
+reagir(from, "❌️")
+}
+break;
+
 case 'instagram':
 await escrever()
 await sleep(1000)
 try {
 if(q.length < 5) return reply(`Exemplo: ${prefix+command} o link`);
 conn.sendMessage(from, {video: {url: `https://carisys.online/api/downloads/instagram/mp4?url=${q}`}, mimetype: "video/mp4"}, {quoted: selo})
+} catch (e) {
+reagir(from, "❌️")
+}
+break;
+
+case 'insta_audio': case 'instaaudio': case 'igaudio':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+try {
+if(!q.trim()) return reply(`Exemplo: ${prefix+command} o link`);
+conn.sendMessage(from, {audio: {url: `https://carisys.online/api/downloads/instagram/mp3?url=${q}`}, mimetype: "audio/mpeg"}, {quoted: selo})
 } catch (e) {
 reagir(from, "❌️")
 }
@@ -5525,6 +5552,126 @@ reply(`Enviar imagem / vídeo / gif com legenda \n${prefix}sticker (duração do
 }
 break
 
+case 'figu-random':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundobon() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figurinhas`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundobon()
+}
+break
+
+case 'figu-raiva':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundoraiva() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuraiva`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundoraiva()
+}
+break
+
+case 'figu-meme':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundobxx() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuengracadas`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundobxx()
+}
+break
+
+case 'figu-desenho':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundobcvxx() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/sticker/figu_desenho`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundobcvxx()
+}
+break
+
+case 'figu-flork':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundoflork() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuflork`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundoflork()
+}
+break
+
+case 'figu-roblox':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundoroblox() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuroblox`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundoroblox()
+}
+break
+
+case 'figu-anime':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitxmundobom() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuanime`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitxmundobom()
+}
+break
+
+case 'figu-coreana':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamxndobom() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figucoreana`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamxndobom()
+}
+break
+
+case 'figu-animais':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundoruim() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figuanimais`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundoruim()
+}
+break
+
+case 'figu-bebe':
+reply(Res_Aguarde)
+await escrever()
+await sleep(1000)
+async function eitamundobebe() {
+conn.sendMessage(from, { sticker: { url: `https://carisys.online/api/sticker/figubebe`} })}
+for (i = 0; i < 10; i++) {
+await sleep(200)
+eitamundobebe()
+}
+break
+
 case 'st':
 case 'stk':
 case 'sticker':
@@ -5569,11 +5716,11 @@ break
 
 case 'metadinha':
 try {
-ABC = await fetchJson(`https://api.bronxyshost.com.br/api-bronxys/metadinha?apikey=`+API_KEY_ANGEL);
-conn.sendMessage(from, {image: {url: ABC.link1}}).catch(() => {
+ABC = await fetchJson(`https://astroapi.shop/random/metadinha?apikey=${NATSU_KEY}`);
+conn.sendMessage(from, {image: {url: ABC.masculina}}).catch(() => {
 return reply("Erro..")
 })
-conn.sendMessage(from, {image: {url: ABC.link2}}).catch(() => {
+conn.sendMessage(from, {image: {url: ABC.feminina}}).catch(() => {
 return reply("Erro..")
 })
 } catch (e) {
