@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src= "https://nexus-api.shop/171zqd.jpg" alt="ANGEL BASE" width="720">
+<img src= "https://nexus-api.shop/v7g34m.jpg" alt="ANGEL BASE" width="720">
 </p>
 
 <p align="center">
